@@ -35,7 +35,7 @@ names(SL_1990_2020)
 ## change the legend names and colors
 SL_1990_2020$tb_legend$color <- c("blue", "green", "red", "yellow", "brown")
 SL_1990_2020$tb_legend$categoryName <- factor(c("Water", "Vegetation", "Builtup", "Crop", "Barren"),
-                                              levels = c("Water", "Vegetation", "Builtup", "Crop", "Barren"))
+                                              levels = c("Water", "Vegetation", "Builtup", "Agriculture", "Barren"))
 
 
 ## Intensity Analysis - 
