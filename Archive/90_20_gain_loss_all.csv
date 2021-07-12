@@ -1,0 +1,55 @@
+district,state,st_cen_cd,dt_cen_cd,censuscode,site_area,landuse,Loss,Gain
+North Delhi,NCT of Delhi,7,2,91,69.08,Builtup,-2.53,18.32
+New Delhi,NCT of Delhi,7,5,94,38.5,Builtup,-2.39,6.67
+North West Delhi,NCT of Delhi,7,1,90,443.09,Builtup,-3.46,140.69
+North East Delhi,NCT of Delhi,7,3,92,62.52,Builtup,-0.26,18.27
+South West Delhi,NCT of Delhi,7,8,97,434.52,Builtup,-6.98,129.35
+East Delhi,NCT of Delhi,7,4,93,65.27,Builtup,-0.35,27.85
+South Delhi,NCT of Delhi,7,9,98,253.77,Builtup,-5.65,68.41
+Central Delhi,NCT of Delhi,7,6,95,15.1,Builtup,-1.03,0.7
+West Delhi,NCT of Delhi,7,7,96,122.12,Builtup,-2.35,40.8
+Baghpat,Uttar Pradesh,9,8,139,1328.79,Builtup,-5.85,39.67
+Faridabad,Haryana,6,20,88,840.97,Builtup,-2.65,140.05
+Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,Builtup,-1.8,320.53
+Ghaziabad,Uttar Pradesh,9,9,140,1977.55,Builtup,-3.18,196.41
+Gurgaon,Haryana,6,18,86,1237.25,Builtup,-7.17,295.07
+Jhajjar,Haryana,6,15,83,1937.9,Builtup,-1.75,152.64
+Meerut,Uttar Pradesh,9,7,138,2612.99,Builtup,-5.71,145.26
+Rohtak,Haryana,6,14,82,1720.41,Builtup,-3.72,128.06
+Sonipat,Haryana,6,8,76,2157.98,Builtup,-8.96,118.81
+Faridabad,Haryana,6,20,88,840.97,Agriculture,-153.59,107
+Rohtak,Haryana,6,14,82,1720.41,Agriculture,-177.93,54.57
+Sonipat,Haryana,6,8,76,2157.98,Agriculture,-190.32,79.41
+Jhajjar,Haryana,6,15,83,1937.9,Agriculture,-255.38,105.66
+Gurgaon,Haryana,6,18,86,1237.25,Agriculture,-303.45,84.37
+Central Delhi,NCT of Delhi,7,6,95,15.1,Agriculture,-0.49,0.04
+New Delhi,NCT of Delhi,7,5,94,38.5,Agriculture,-0.58,0.28
+North Delhi,NCT of Delhi,7,2,91,69.08,Agriculture,-11.04,3.21
+North East Delhi,NCT of Delhi,7,3,92,62.52,Agriculture,-12.61,2.46
+East Delhi,NCT of Delhi,7,4,93,65.27,Agriculture,-18.8,0.17
+West Delhi,NCT of Delhi,7,7,96,122.12,Agriculture,-28.95,1.27
+South Delhi,NCT of Delhi,7,9,98,253.77,Agriculture,-43.88,1.71
+South West Delhi,NCT of Delhi,7,8,97,434.52,Agriculture,-92.62,6.76
+North West Delhi,NCT of Delhi,7,1,90,443.09,Agriculture,-108.76,20.5
+Baghpat,Uttar Pradesh,9,8,139,1328.79,Agriculture,-104.12,110.06
+Meerut,Uttar Pradesh,9,7,138,2612.99,Agriculture,-242.83,393.79
+Ghaziabad,Uttar Pradesh,9,9,140,1977.55,Agriculture,-291.94,238.28
+Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,Agriculture,-369.99,126.1
+North Delhi,NCT of Delhi,7,2,91,69.08,Barren,-4.73,1.53
+New Delhi,NCT of Delhi,7,5,94,38.5,Barren,-0.39,0.09
+North West Delhi,NCT of Delhi,7,1,90,443.09,Barren,-73.66,21.9204
+North East Delhi,NCT of Delhi,7,3,92,62.52,Barren,-11.01,1.8252
+South West Delhi,NCT of Delhi,7,8,97,434.52,Barren,-81.36,13.1904
+East Delhi,NCT of Delhi,7,4,93,65.27,Barren,-14.56,1.278
+South Delhi,NCT of Delhi,7,9,98,253.77,Barren,-65.26,6.6348
+Central Delhi,NCT of Delhi,7,6,95,15.1,Barren,-0.15,0.0576
+West Delhi,NCT of Delhi,7,7,96,122.12,Barren,-16.85,1.6992
+Baghpat,Uttar Pradesh,9,8,139,1328.79,Barren,-98.81,45.2232
+Faridabad,Haryana,6,20,88,840.97,Barren,-172.19,49.5
+Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,Barren,-216.04,114.6672
+Ghaziabad,Uttar Pradesh,9,9,140,1977.55,Barren,-260.49,113.3028
+Gurgaon,Haryana,6,18,86,1237.25,Barren,-166.48,69.3828
+Jhajjar,Haryana,6,15,83,1937.9,Barren,-124.64,72.1044
+Meerut,Uttar Pradesh,9,7,138,2612.99,Barren,-339.7,62.3232
+Rohtak,Haryana,6,14,82,1720.41,Barren,-76.77,30.6396
+Sonipat,Haryana,6,8,76,2157.98,Barren,-68.75,62.172

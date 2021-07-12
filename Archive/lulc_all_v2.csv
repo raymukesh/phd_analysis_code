@@ -1,0 +1,631 @@
+year,district,state,st_cen_cd,dt_cn_cd,censuscode,area_km,landuse,area
+1990,North Delhi,NCT of Delhi,7,2,91,69.08,water,4.13
+1990,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,15.98
+1990,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,25.7
+1990,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,18.34
+1990,North Delhi,NCT of Delhi,7,2,91,69.08,barren,4.92
+1990,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.66
+1990,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,20.78
+1990,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,15.56
+1990,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0.69
+1990,New Delhi,NCT of Delhi,7,5,94,38.5,barren,0.8
+1990,North West Delhi,NCT of Delhi,7,1,90,443.09,water,1.04
+1990,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,22.46
+1990,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,65.33
+1990,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,275.44
+1990,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,78.98
+1990,North East Delhi,NCT of Delhi,7,3,92,62.52,water,0.99
+1990,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,1.79
+1990,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,30.82
+1990,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,17.3
+1990,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,11.63
+1990,South West Delhi,NCT of Delhi,7,8,97,434.52,water,0.99
+1990,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,38.9
+1990,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,64.44
+1990,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,233.14
+1990,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,97.14
+1990,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.66
+1990,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,1.58
+1990,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,27.1
+1990,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,20.08
+1990,East Delhi,NCT of Delhi,7,4,93,65.27,barren,14.91
+1990,South Delhi,NCT of Delhi,7,9,98,253.77,water,5.08
+1990,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,23.29
+1990,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,58.14
+1990,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,45.72
+1990,South Delhi,NCT of Delhi,7,9,98,253.77,barren,121.64
+1990,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.41
+1990,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,2.91
+1990,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,11.14
+1990,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0.49
+1990,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,0.15
+1990,West Delhi,NCT of Delhi,7,7,96,122.12,water,0.38
+1990,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,4.51
+1990,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,62.25
+1990,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,37.99
+1990,West Delhi,NCT of Delhi,7,7,96,122.12,barren,17
+1990,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,2.29
+1990,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,14.62
+1990,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,35.21
+1990,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1173.17
+1990,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,103.74
+1990,Faridabad,Haryana,6,20,88,840.97,water,4.88
+1990,Faridabad,Haryana,6,20,88,840.97,vegetation,5.73
+1990,Faridabad,Haryana,6,20,88,840.97,builtup,34.57
+1990,Faridabad,Haryana,6,20,88,840.97,agriculture,536.32
+1990,Faridabad,Haryana,6,20,88,840.97,barren,259.31
+1990,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,4.09
+1990,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,13.77
+1990,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,18.98
+1990,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,1106.04
+1990,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,265.83
+1990,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,2.5
+1990,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,51.93
+1990,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,41.69
+1990,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1586.79
+1990,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,295.37
+1990,Gurgaon,Haryana,6,18,86,1237.25,water,0.31
+1990,Gurgaon,Haryana,6,18,86,1237.25,vegetation,20.62
+1990,Gurgaon,Haryana,6,18,86,1237.25,builtup,33.75
+1990,Gurgaon,Haryana,6,18,86,1237.25,agriculture,875.49
+1990,Gurgaon,Haryana,6,18,86,1237.25,barren,306.58
+1990,Jhajjar,Haryana,6,15,83,1937.9,water,4.09
+1990,Jhajjar,Haryana,6,15,83,1937.9,vegetation,17.14
+1990,Jhajjar,Haryana,6,15,83,1937.9,builtup,40.29
+1990,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1732.38
+1990,Jhajjar,Haryana,6,15,83,1937.9,barren,143.73
+1990,Meerut,Uttar Pradesh,9,7,138,2612.99,water,15.99
+1990,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,125.39
+1990,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,41.78
+1990,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2049.83
+1990,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,381.06
+1990,Rohtak,Haryana,6,14,82,1720.41,water,0.5
+1990,Rohtak,Haryana,6,14,82,1720.41,vegetation,9.12
+1990,Rohtak,Haryana,6,14,82,1720.41,builtup,55.01
+1990,Rohtak,Haryana,6,14,82,1720.41,agriculture,1567.09
+1990,Rohtak,Haryana,6,14,82,1720.41,barren,88.06
+1990,Sonipat,Haryana,6,8,76,2157.98,water,7.27
+1990,Sonipat,Haryana,6,8,76,2157.98,vegetation,18.89
+1990,Sonipat,Haryana,6,8,76,2157.98,builtup,67.88
+1990,Sonipat,Haryana,6,8,76,2157.98,agriculture,1986.05
+1990,Sonipat,Haryana,6,8,76,2157.98,barren,77.54
+1995,North Delhi,NCT of Delhi,7,2,91,69.08,water,3.79
+1995,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,19.3
+1995,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,28.62
+1995,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,12.5
+1995,North Delhi,NCT of Delhi,7,2,91,69.08,barren,4.87
+1995,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.6
+1995,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,27.75
+1995,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,8.99
+1995,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0.51
+1995,New Delhi,NCT of Delhi,7,5,94,38.5,barren,0.65
+1995,North West Delhi,NCT of Delhi,7,1,90,443.09,water,1.37
+1995,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,42.42
+1995,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,103.56
+1995,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,238.05
+1995,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,57.87
+1995,North East Delhi,NCT of Delhi,7,3,92,62.52,water,1.17
+1995,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,4.03
+1995,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,35.85
+1995,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,9.68
+1995,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,11.8
+1995,South West Delhi,NCT of Delhi,7,8,97,434.52,water,1.35
+1995,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,51.02
+1995,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,64.33
+1995,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,232.03
+1995,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,85.86
+1995,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.75
+1995,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,3.25
+1995,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,30.7
+1995,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,16.16
+1995,East Delhi,NCT of Delhi,7,4,93,65.27,barren,13.45
+1995,South Delhi,NCT of Delhi,7,9,98,253.77,water,4.98
+1995,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,28.83
+1995,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,64.14
+1995,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,43.81
+1995,South Delhi,NCT of Delhi,7,9,98,253.77,barren,112.1
+1995,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.4
+1995,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,4.3
+1995,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,10.1
+1995,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0.21
+1995,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,0.09
+1995,West Delhi,NCT of Delhi,7,7,96,122.12,water,0.19
+1995,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,7.32
+1995,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,68.8
+1995,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,37.12
+1995,West Delhi,NCT of Delhi,7,7,96,122.12,barren,8.7
+1995,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,3.88
+1995,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,23.11
+1995,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,28.02
+1995,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1172.52
+1995,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,101.37
+1995,Faridabad,Haryana,6,20,88,840.97,water,5.36
+1995,Faridabad,Haryana,6,20,88,840.97,vegetation,8.31
+1995,Faridabad,Haryana,6,20,88,840.97,builtup,43.91
+1995,Faridabad,Haryana,6,20,88,840.97,agriculture,624.74
+1995,Faridabad,Haryana,6,20,88,840.97,barren,158.67
+1995,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,5.26
+1995,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,18.81
+1995,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,27.41
+1995,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,1153.83
+1995,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,204.47
+1995,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,4.28
+1995,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,59.41
+1995,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,62.78
+1995,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1638.24
+1995,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,214.25
+1995,Gurgaon,Haryana,6,18,86,1237.25,water,0.98
+1995,Gurgaon,Haryana,6,18,86,1237.25,vegetation,30.6
+1995,Gurgaon,Haryana,6,18,86,1237.25,builtup,26.4
+1995,Gurgaon,Haryana,6,18,86,1237.25,agriculture,917.19
+1995,Gurgaon,Haryana,6,18,86,1237.25,barren,261.65
+1995,Jhajjar,Haryana,6,15,83,1937.9,water,5.95
+1995,Jhajjar,Haryana,6,15,83,1937.9,vegetation,18.85
+1995,Jhajjar,Haryana,6,15,83,1937.9,builtup,44.91
+1995,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1766.47
+1995,Jhajjar,Haryana,6,15,83,1937.9,barren,101.49
+1995,Meerut,Uttar Pradesh,9,7,138,2612.99,water,13.92
+1995,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,127.35
+1995,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,45.19
+1995,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2154.3
+1995,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,273.19
+1995,Rohtak,Haryana,6,14,82,1720.41,water,2.17
+1995,Rohtak,Haryana,6,14,82,1720.41,vegetation,6.7
+1995,Rohtak,Haryana,6,14,82,1720.41,builtup,60.72
+1995,Rohtak,Haryana,6,14,82,1720.41,agriculture,1555.05
+1995,Rohtak,Haryana,6,14,82,1720.41,barren,94.93
+1995,Sonipat,Haryana,6,8,76,2157.98,water,13.95
+1995,Sonipat,Haryana,6,8,76,2157.98,vegetation,17.1
+1995,Sonipat,Haryana,6,8,76,2157.98,builtup,63.75
+1995,Sonipat,Haryana,6,8,76,2157.98,agriculture,1998.87
+1995,Sonipat,Haryana,6,8,76,2157.98,barren,63.6
+2000,North Delhi,NCT of Delhi,7,2,91,69.08,water,3.09
+2000,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,16.02
+2000,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,29.7
+2000,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,11.55
+2000,North Delhi,NCT of Delhi,7,2,91,69.08,barren,8.72
+2000,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.37
+2000,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,22.78
+2000,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,14.16
+2000,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0.09
+2000,New Delhi,NCT of Delhi,7,5,94,38.5,barren,1.09
+2000,North West Delhi,NCT of Delhi,7,1,90,443.09,water,1.08
+2000,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,65
+2000,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,106.96
+2000,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,214.27
+2000,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,55.95
+2000,North East Delhi,NCT of Delhi,7,3,92,62.52,water,1
+2000,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,4.85
+2000,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,42.37
+2000,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,5.29
+2000,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,9.02
+2000,South West Delhi,NCT of Delhi,7,8,97,434.52,water,2.18
+2000,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,74.77
+2000,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,90.37
+2000,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,179.53
+2000,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,87.75
+2000,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.43
+2000,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,6.77
+2000,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,41.18
+2000,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,3.98
+2000,East Delhi,NCT of Delhi,7,4,93,65.27,barren,11.96
+2000,South Delhi,NCT of Delhi,7,9,98,253.77,water,3.98
+2000,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,61.49
+2000,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,77.3
+2000,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,12.5
+2000,South Delhi,NCT of Delhi,7,9,98,253.77,barren,98.59
+2000,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.27
+2000,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,3.75
+2000,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,10.55
+2000,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0.03
+2000,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,0.49
+2000,West Delhi,NCT of Delhi,7,7,96,122.12,water,0.85
+2000,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,9.05
+2000,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,78.39
+2000,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,21.23
+2000,West Delhi,NCT of Delhi,7,7,96,122.12,barren,12.59
+2000,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,1.48
+2000,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,47.09
+2000,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,45.73
+2000,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1193.5
+2000,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,41.23
+2000,Faridabad,Haryana,6,20,88,840.97,water,4.09
+2000,Faridabad,Haryana,6,20,88,840.97,vegetation,50.13
+2000,Faridabad,Haryana,6,20,88,840.97,builtup,48.83
+2000,Faridabad,Haryana,6,20,88,840.97,agriculture,511.35
+2000,Faridabad,Haryana,6,20,88,840.97,barren,226.64
+2000,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,5.65
+2000,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,66.97
+2000,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,59.23
+2000,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,1076.92
+2000,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,200.04
+2000,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,3.27
+2000,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,124.86
+2000,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,110.81
+2000,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1569.34
+2000,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,169.65
+2000,Gurgaon,Haryana,6,18,86,1237.25,water,1.31
+2000,Gurgaon,Haryana,6,18,86,1237.25,vegetation,68.34
+2000,Gurgaon,Haryana,6,18,86,1237.25,builtup,64.74
+2000,Gurgaon,Haryana,6,18,86,1237.25,agriculture,818.36
+2000,Gurgaon,Haryana,6,18,86,1237.25,barren,284.05
+2000,Jhajjar,Haryana,6,15,83,1937.9,water,2.4
+2000,Jhajjar,Haryana,6,15,83,1937.9,vegetation,66.43
+2000,Jhajjar,Haryana,6,15,83,1937.9,builtup,64.72
+2000,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1588.09
+2000,Jhajjar,Haryana,6,15,83,1937.9,barren,215.19
+2000,Meerut,Uttar Pradesh,9,7,138,2612.99,water,4.5
+2000,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,146.43
+2000,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,100.57
+2000,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2208.91
+2000,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,154.35
+2000,Rohtak,Haryana,6,14,82,1720.41,water,1.75
+2000,Rohtak,Haryana,6,14,82,1720.41,vegetation,31.09
+2000,Rohtak,Haryana,6,14,82,1720.41,builtup,61.52
+2000,Rohtak,Haryana,6,14,82,1720.41,agriculture,1435.85
+2000,Rohtak,Haryana,6,14,82,1720.41,barren,189.35
+2000,Sonipat,Haryana,6,8,76,2157.98,water,3.36
+2000,Sonipat,Haryana,6,8,76,2157.98,vegetation,54.48
+2000,Sonipat,Haryana,6,8,76,2157.98,builtup,72.15
+2000,Sonipat,Haryana,6,8,76,2157.98,agriculture,1904.01
+2000,Sonipat,Haryana,6,8,76,2157.98,barren,123.8
+2005,North Delhi,NCT of Delhi,7,2,91,69.08,water,3.07
+2005,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,11.13
+2005,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,31.21
+2005,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,15.21
+2005,North Delhi,NCT of Delhi,7,2,91,69.08,barren,8.46
+2005,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.32
+2005,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,24.4
+2005,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,11.9
+2005,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0
+2005,New Delhi,NCT of Delhi,7,5,94,38.5,barren,1.88
+2005,North West Delhi,NCT of Delhi,7,1,90,443.09,water,0.42
+2005,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,17.88
+2005,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,113.11
+2005,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,248.1
+2005,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,63.75
+2005,North East Delhi,NCT of Delhi,7,3,92,62.52,water,1.26
+2005,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,1.51
+2005,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,44.22
+2005,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,6.96
+2005,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,8.58
+2005,South West Delhi,NCT of Delhi,7,8,97,434.52,water,0.85
+2005,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,44.17
+2005,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,92.52
+2005,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,190.27
+2005,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,106.79
+2005,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.25
+2005,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,5.1
+2005,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,47.04
+2005,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,3.45
+2005,East Delhi,NCT of Delhi,7,4,93,65.27,barren,8.48
+2005,South Delhi,NCT of Delhi,7,9,98,253.77,water,2.86
+2005,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,40.42
+2005,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,85.59
+2005,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,23.25
+2005,South Delhi,NCT of Delhi,7,9,98,253.77,barren,101.74
+2005,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.27
+2005,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,3.9
+2005,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,9.88
+2005,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0.05
+2005,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,1
+2005,West Delhi,NCT of Delhi,7,7,96,122.12,water,0.8
+2005,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,7.23
+2005,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,79.78
+2005,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,23.19
+2005,West Delhi,NCT of Delhi,7,7,96,122.12,barren,11.13
+2005,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,0.62
+2005,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,14.93
+2005,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,41.09
+2005,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1219.28
+2005,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,53.37
+2005,Faridabad,Haryana,6,20,88,840.97,water,3.56
+2005,Faridabad,Haryana,6,20,88,840.97,vegetation,27.46
+2005,Faridabad,Haryana,6,20,88,840.97,builtup,80.18
+2005,Faridabad,Haryana,6,20,88,840.97,agriculture,539.76
+2005,Faridabad,Haryana,6,20,88,840.97,barren,190.24
+2005,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,4.85
+2005,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,27.01
+2005,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,105.47
+2005,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,1092.55
+2005,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,179.55
+2005,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,4.04
+2005,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,81.82
+2005,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,143.7
+2005,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1590.24
+2005,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,158.02
+2005,Gurgaon,Haryana,6,18,86,1237.25,water,0.44
+2005,Gurgaon,Haryana,6,18,86,1237.25,vegetation,16.02
+2005,Gurgaon,Haryana,6,18,86,1237.25,builtup,78.36
+2005,Gurgaon,Haryana,6,18,86,1237.25,agriculture,840.84
+2005,Gurgaon,Haryana,6,18,86,1237.25,barren,301.18
+2005,Jhajjar,Haryana,6,15,83,1937.9,water,6
+2005,Jhajjar,Haryana,6,15,83,1937.9,vegetation,7.88
+2005,Jhajjar,Haryana,6,15,83,1937.9,builtup,55.69
+2005,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1726.82
+2005,Jhajjar,Haryana,6,15,83,1937.9,barren,141.34
+2005,Meerut,Uttar Pradesh,9,7,138,2612.99,water,7.79
+2005,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,96.5
+2005,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,100.34
+2005,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2158.59
+2005,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,251.25
+2005,Rohtak,Haryana,6,14,82,1720.41,water,1.93
+2005,Rohtak,Haryana,6,14,82,1720.41,vegetation,3
+2005,Rohtak,Haryana,6,14,82,1720.41,builtup,64.68
+2005,Rohtak,Haryana,6,14,82,1720.41,agriculture,1609.52
+2005,Rohtak,Haryana,6,14,82,1720.41,barren,40.76
+2005,Sonipat,Haryana,6,8,76,2157.98,water,1.61
+2005,Sonipat,Haryana,6,8,76,2157.98,vegetation,6.48
+2005,Sonipat,Haryana,6,8,76,2157.98,builtup,63.33
+2005,Sonipat,Haryana,6,8,76,2157.98,agriculture,2005.19
+2005,Sonipat,Haryana,6,8,76,2157.98,barren,81.31
+2010,North Delhi,NCT of Delhi,7,2,91,69.08,water,2.92
+2010,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,11.61
+2010,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,37.42
+2010,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,12.37
+2010,North Delhi,NCT of Delhi,7,2,91,69.08,barren,4.76
+2010,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.32
+2010,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,18.98
+2010,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,17.69
+2010,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0.89
+2010,New Delhi,NCT of Delhi,7,5,94,38.5,barren,0.62
+2010,North West Delhi,NCT of Delhi,7,1,90,443.09,water,1.05
+2010,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,40.74
+2010,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,140.4
+2010,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,214.84
+2010,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,46.23
+2010,North East Delhi,NCT of Delhi,7,3,92,62.52,water,1.89
+2010,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,2.47
+2010,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,46.85
+2010,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,6.88
+2010,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,4.44
+2010,South West Delhi,NCT of Delhi,7,8,97,434.52,water,0.26
+2010,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,75.07
+2010,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,113.84
+2010,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,192.01
+2010,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,53.43
+2010,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.6
+2010,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,4.46
+2010,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,51.13
+2010,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,3.43
+2010,East Delhi,NCT of Delhi,7,4,93,65.27,barren,4.7
+2010,South Delhi,NCT of Delhi,7,9,98,253.77,water,4.13
+2010,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,65.98
+2010,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,98.13
+2010,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,21.51
+2010,South Delhi,NCT of Delhi,7,9,98,253.77,barren,64.12
+2010,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.27
+2010,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,3.22
+2010,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,11.21
+2010,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0.19
+2010,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,0.21
+2010,West Delhi,NCT of Delhi,7,7,96,122.12,water,0.22
+2010,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,13.89
+2010,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,85.65
+2010,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,16.79
+2010,West Delhi,NCT of Delhi,7,7,96,122.12,barren,5.58
+2010,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,0.58
+2010,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,12.26
+2010,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,33.63
+2010,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1226.73
+2010,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,56.07
+2010,Faridabad,Haryana,6,20,88,840.97,water,2.91
+2010,Faridabad,Haryana,6,20,88,840.97,vegetation,27.35
+2010,Faridabad,Haryana,6,20,88,840.97,builtup,104.68
+2010,Faridabad,Haryana,6,20,88,840.97,agriculture,541.49
+2010,Faridabad,Haryana,6,20,88,840.97,barren,164.66
+2010,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,4.81
+2010,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,38.34
+2010,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,156.42
+2010,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,991.68
+2010,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,218.38
+2010,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,4.78
+2010,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,61.73
+2010,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,164.9
+2010,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1590.52
+2010,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,156.52
+2010,Gurgaon,Haryana,6,18,86,1237.25,water,2.51
+2010,Gurgaon,Haryana,6,18,86,1237.25,vegetation,65.05
+2010,Gurgaon,Haryana,6,18,86,1237.25,builtup,110.53
+2010,Gurgaon,Haryana,6,18,86,1237.25,agriculture,833.8
+2010,Gurgaon,Haryana,6,18,86,1237.25,barren,224.62
+2010,Jhajjar,Haryana,6,15,83,1937.9,water,13.55
+2010,Jhajjar,Haryana,6,15,83,1937.9,vegetation,103.31
+2010,Jhajjar,Haryana,6,15,83,1937.9,builtup,64.07
+2010,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1585.36
+2010,Jhajjar,Haryana,6,15,83,1937.9,barren,171.12
+2010,Meerut,Uttar Pradesh,9,7,138,2612.99,water,22
+2010,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,76.24
+2010,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,91.08
+2010,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2055.01
+2010,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,369.67
+2010,Rohtak,Haryana,6,14,82,1720.41,water,4.11
+2010,Rohtak,Haryana,6,14,82,1720.41,vegetation,39.21
+2010,Rohtak,Haryana,6,14,82,1720.41,builtup,55.55
+2010,Rohtak,Haryana,6,14,82,1720.41,agriculture,1525.4
+2010,Rohtak,Haryana,6,14,82,1720.41,barren,95.45
+2010,Sonipat,Haryana,6,8,76,2157.98,water,1.55
+2010,Sonipat,Haryana,6,8,76,2157.98,vegetation,15.79
+2010,Sonipat,Haryana,6,8,76,2157.98,builtup,67.42
+2010,Sonipat,Haryana,6,8,76,2157.98,agriculture,1981.52
+2010,Sonipat,Haryana,6,8,76,2157.98,barren,91.61
+2015,North Delhi,NCT of Delhi,7,2,91,69.08,water,2.49
+2015,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,9.9
+2015,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,38.92
+2015,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,9.23
+2015,North Delhi,NCT of Delhi,7,2,91,69.08,barren,8.54
+2015,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.47
+2015,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,22.57
+2015,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,14.8
+2015,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0.13
+2015,New Delhi,NCT of Delhi,7,5,94,38.5,barren,0.53
+2015,North West Delhi,NCT of Delhi,7,1,90,443.09,water,0.09
+2015,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,18.45
+2015,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,168.39
+2015,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,177.52
+2015,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,78.81
+2015,North East Delhi,NCT of Delhi,7,3,92,62.52,water,0.4
+2015,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,2.97
+2015,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,47.76
+2015,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,5.57
+2015,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,5.83
+2015,South West Delhi,NCT of Delhi,7,8,97,434.52,water,1.74
+2015,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,88.56
+2015,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,144.15
+2015,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,168.83
+2015,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,31.32
+2015,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.53
+2015,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,7.8
+2015,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,52.07
+2015,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,2.57
+2015,East Delhi,NCT of Delhi,7,4,93,65.27,barren,1.35
+2015,South Delhi,NCT of Delhi,7,9,98,253.77,water,3.34
+2015,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,70.29
+2015,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,99.22
+2015,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,7.39
+2015,South Delhi,NCT of Delhi,7,9,98,253.77,barren,73.62
+2015,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.35
+2015,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,3.68
+2015,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,11.01
+2015,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0
+2015,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,0.06
+2015,West Delhi,NCT of Delhi,7,7,96,122.12,water,0.87
+2015,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,7.32
+2015,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,96.41
+2015,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,12.28
+2015,West Delhi,NCT of Delhi,7,7,96,122.12,barren,5.24
+2015,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,0.54
+2015,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,37.08
+2015,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,49.24
+2015,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1191.07
+2015,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,51.35
+2015,Faridabad,Haryana,6,20,88,840.97,water,6.32
+2015,Faridabad,Haryana,6,20,88,840.97,vegetation,50.04
+2015,Faridabad,Haryana,6,20,88,840.97,builtup,117.1
+2015,Faridabad,Haryana,6,20,88,840.97,agriculture,514.07
+2015,Faridabad,Haryana,6,20,88,840.97,barren,153.58
+2015,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,5.59
+2015,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,67.58
+2015,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,220.91
+2015,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,908.24
+2015,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,206.94
+2015,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,2.4
+2015,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,88.26
+2015,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,184.7
+2015,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1603.88
+2015,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,99.02
+2015,Gurgaon,Haryana,6,18,86,1237.25,water,3.17
+2015,Gurgaon,Haryana,6,18,86,1237.25,vegetation,47.07
+2015,Gurgaon,Haryana,6,18,86,1237.25,builtup,160.57
+2015,Gurgaon,Haryana,6,18,86,1237.25,agriculture,759.31
+2015,Gurgaon,Haryana,6,18,86,1237.25,barren,266.77
+2015,Jhajjar,Haryana,6,15,83,1937.9,water,6.6
+2015,Jhajjar,Haryana,6,15,83,1937.9,vegetation,42.27
+2015,Jhajjar,Haryana,6,15,83,1937.9,builtup,100.22
+2015,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1664.42
+2015,Jhajjar,Haryana,6,15,83,1937.9,barren,123.87
+2015,Meerut,Uttar Pradesh,9,7,138,2612.99,water,11.92
+2015,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,139.05
+2015,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,153.49
+2015,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2182.89
+2015,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,127.32
+2015,Rohtak,Haryana,6,14,82,1720.41,water,1.7
+2015,Rohtak,Haryana,6,14,82,1720.41,vegetation,17.1
+2015,Rohtak,Haryana,6,14,82,1720.41,builtup,105.44
+2015,Rohtak,Haryana,6,14,82,1720.41,agriculture,1509.75
+2015,Rohtak,Haryana,6,14,82,1720.41,barren,85.85
+2015,Sonipat,Haryana,6,8,76,2157.98,water,1.18
+2015,Sonipat,Haryana,6,8,76,2157.98,vegetation,12.98
+2015,Sonipat,Haryana,6,8,76,2157.98,builtup,114.75
+2015,Sonipat,Haryana,6,8,76,2157.98,agriculture,1941.09
+2015,Sonipat,Haryana,6,8,76,2157.98,barren,87.87
+2020,North Delhi,NCT of Delhi,7,2,91,69.08,water,4.92
+2020,North Delhi,NCT of Delhi,7,2,91,69.08,vegetation,10.43
+2020,North Delhi,NCT of Delhi,7,2,91,69.08,builtup,41.49
+2020,North Delhi,NCT of Delhi,7,2,91,69.08,agriculture,10.51
+2020,North Delhi,NCT of Delhi,7,2,91,69.08,barren,1.73
+2020,New Delhi,NCT of Delhi,7,5,94,38.5,water,0.54
+2020,New Delhi,NCT of Delhi,7,5,94,38.5,vegetation,17.21
+2020,New Delhi,NCT of Delhi,7,5,94,38.5,builtup,19.84
+2020,New Delhi,NCT of Delhi,7,5,94,38.5,agriculture,0.4
+2020,New Delhi,NCT of Delhi,7,5,94,38.5,barren,0.51
+2020,North West Delhi,NCT of Delhi,7,1,90,443.09,water,3.41
+2020,North West Delhi,NCT of Delhi,7,1,90,443.09,vegetation,22.86
+2020,North West Delhi,NCT of Delhi,7,1,90,443.09,builtup,202.56
+2020,North West Delhi,NCT of Delhi,7,1,90,443.09,agriculture,187.19
+2020,North West Delhi,NCT of Delhi,7,1,90,443.09,barren,27.24
+2020,North East Delhi,NCT of Delhi,7,3,92,62.52,water,1.58
+2020,North East Delhi,NCT of Delhi,7,3,92,62.52,vegetation,2.53
+2020,North East Delhi,NCT of Delhi,7,3,92,62.52,builtup,48.83
+2020,North East Delhi,NCT of Delhi,7,3,92,62.52,agriculture,7.15
+2020,North East Delhi,NCT of Delhi,7,3,92,62.52,barren,2.44
+2020,South West Delhi,NCT of Delhi,7,8,97,434.52,water,2.75
+2020,South West Delhi,NCT of Delhi,7,8,97,434.52,vegetation,68.8
+2020,South West Delhi,NCT of Delhi,7,8,97,434.52,builtup,186.8
+2020,South West Delhi,NCT of Delhi,7,8,97,434.52,agriculture,147.28
+2020,South West Delhi,NCT of Delhi,7,8,97,434.52,barren,28.98
+2020,East Delhi,NCT of Delhi,7,4,93,65.27,water,1.75
+2020,East Delhi,NCT of Delhi,7,4,93,65.27,vegetation,5.9
+2020,East Delhi,NCT of Delhi,7,4,93,65.27,builtup,54.6
+2020,East Delhi,NCT of Delhi,7,4,93,65.27,agriculture,1.44
+2020,East Delhi,NCT of Delhi,7,4,93,65.27,barren,1.63
+2020,South Delhi,NCT of Delhi,7,9,98,253.77,water,4.73
+2020,South Delhi,NCT of Delhi,7,9,98,253.77,vegetation,61.68
+2020,South Delhi,NCT of Delhi,7,9,98,253.77,builtup,120.9
+2020,South Delhi,NCT of Delhi,7,9,98,253.77,agriculture,3.55
+2020,South Delhi,NCT of Delhi,7,9,98,253.77,barren,63.01
+2020,Central Delhi,NCT of Delhi,7,6,95,15.1,water,0.37
+2020,Central Delhi,NCT of Delhi,7,6,95,15.1,vegetation,3.82
+2020,Central Delhi,NCT of Delhi,7,6,95,15.1,builtup,10.81
+2020,Central Delhi,NCT of Delhi,7,6,95,15.1,agriculture,0.04
+2020,Central Delhi,NCT of Delhi,7,6,95,15.1,barren,0.06
+2020,West Delhi,NCT of Delhi,7,7,96,122.12,water,1.49
+2020,West Delhi,NCT of Delhi,7,7,96,122.12,vegetation,7.78
+2020,West Delhi,NCT of Delhi,7,7,96,122.12,builtup,100.7
+2020,West Delhi,NCT of Delhi,7,7,96,122.12,agriculture,10.32
+2020,West Delhi,NCT of Delhi,7,7,96,122.12,barren,1.84
+2020,Baghpat,Uttar Pradesh,9,8,139,1328.79,water,4.92
+2020,Baghpat,Uttar Pradesh,9,8,139,1328.79,vegetation,25.82
+2020,Baghpat,Uttar Pradesh,9,8,139,1328.79,builtup,69
+2020,Baghpat,Uttar Pradesh,9,8,139,1328.79,agriculture,1178.75
+2020,Baghpat,Uttar Pradesh,9,8,139,1328.79,barren,49.99
+2020,Faridabad,Haryana,6,20,88,840.97,water,9.14
+2020,Faridabad,Haryana,6,20,88,840.97,vegetation,33.35
+2020,Faridabad,Haryana,6,20,88,840.97,builtup,171.98
+2020,Faridabad,Haryana,6,20,88,840.97,agriculture,489.95
+2020,Faridabad,Haryana,6,20,88,840.97,barren,136.58
+2020,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,water,9.9
+2020,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,vegetation,34.48
+2020,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,builtup,337.73
+2020,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,agriculture,862.68
+2020,Gautam Buddha Nagar,Uttar Pradesh,9,10,141,1409.2,barren,164.37
+2020,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,water,9.59
+2020,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,vegetation,52.5
+2020,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,builtup,234.95
+2020,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,agriculture,1532.91
+2020,Ghaziabad,Uttar Pradesh,9,9,140,1977.55,barren,148.1
+2020,Gurgaon,Haryana,6,18,86,1237.25,water,6.96
+2020,Gurgaon,Haryana,6,18,86,1237.25,vegetation,42.24
+2020,Gurgaon,Haryana,6,18,86,1237.25,builtup,321.69
+2020,Gurgaon,Haryana,6,18,86,1237.25,agriculture,656.05
+2020,Gurgaon,Haryana,6,18,86,1237.25,barren,209.02
+2020,Jhajjar,Haryana,6,15,83,1937.9,water,9.63
+2020,Jhajjar,Haryana,6,15,83,1937.9,vegetation,62.96
+2020,Jhajjar,Haryana,6,15,83,1937.9,builtup,191.18
+2020,Jhajjar,Haryana,6,15,83,1937.9,agriculture,1582.03
+2020,Jhajjar,Haryana,6,15,83,1937.9,barren,91.1
+2020,Meerut,Uttar Pradesh,9,7,138,2612.99,water,26.2
+2020,Meerut,Uttar Pradesh,9,7,138,2612.99,vegetation,102.13
+2020,Meerut,Uttar Pradesh,9,7,138,2612.99,builtup,181.39
+2020,Meerut,Uttar Pradesh,9,7,138,2612.99,agriculture,2200.17
+2020,Meerut,Uttar Pradesh,9,7,138,2612.99,barren,103.28
+2020,Rohtak,Haryana,6,14,82,1720.41,water,3.36
+2020,Rohtak,Haryana,6,14,82,1720.41,vegetation,51.41
+2020,Rohtak,Haryana,6,14,82,1720.41,builtup,179.35
+2020,Rohtak,Haryana,6,14,82,1720.41,agriculture,1443.41
+2020,Rohtak,Haryana,6,14,82,1720.41,barren,41.85
+2020,Sonipat,Haryana,6,8,76,2157.98,water,7.08
+2020,Sonipat,Haryana,6,8,76,2157.98,vegetation,26.74
+2020,Sonipat,Haryana,6,8,76,2157.98,builtup,177.73
+2020,Sonipat,Haryana,6,8,76,2157.98,agriculture,1875.26
+2020,Sonipat,Haryana,6,8,76,2157.98,barren,70.95
