@@ -4,6 +4,7 @@
 ## install.packages("OpenLand")
 library(OpenLand)
 library(raster)
+library(kableExtra)
 
 list.files("D:/OneDrive - UTS/PhD_UTS/Stage 3/Analysis/Prediction/ForTerrset60_v4", pattern = ".tif")
 
@@ -32,8 +33,12 @@ head(SL_1990_2020)
 
 names(SL_1990_2020)
 
+all_years_contingency_v4 <- SL_1990_2020$lulc_Multistep
+
+
+
 ## change the legend names and colors
-SL_1990_2020$tb_legend$color <- c("blue", "green", "red", "yellow", "brown")
+SL_1990_2020$tb_legend$color <- c("#00bbf9", "green", "red", "#fee440", "#BF9000")
 SL_1990_2020$tb_legend$categoryName <- factor(c("Water", "Vegetation", "Builtup", "Agriculture", "Barren"),
                                               levels = c("Water", "Vegetation", "Builtup", "Agriculture", "Barren"))
 
@@ -44,6 +49,9 @@ SL_1990_2020$tb_legend$categoryName <- factor(c("Water", "Vegetation", "Builtup"
 testSL <- intensityAnalysis(dataset = SL_1990_2020,
                             category_n = "Builtup", category_m = "Agriculture")
 
+all_transition_v4 <- testSL$lulc_table
+
+write.csv(all_transition_v4, file = "all_transitions_v4.csv", row.names = F)
 
 
 plot(testSL$interval_lvl,
@@ -69,6 +77,8 @@ netgrossplot(dataset = SL_1990_2020$lulc_Multistep,
              color = c(GC = "gray70", NG = "#006400", NL = "#EE2C2C"))
 
 
+
+
 ## Chord diagram showing transiton between land uses
 chordDiagramLand(dataset = SL_1990_2020$lulc_Onestep,
                  legendtable = SL_1990_2020$tb_legend)
@@ -83,4 +93,6 @@ sankeyLand(dataset = SL_1990_2020$lulc_Multistep,
 sankeyLand(dataset = SL_1990_2020$lulc_Onestep,
            legendtable = SL_1990_2020$tb_legend)
 
+as.data.frame(testSL$interval_lvl) %>% kbl()
 
+testSL$category_lvlGain
