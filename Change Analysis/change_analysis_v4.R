@@ -34,13 +34,15 @@ names(SL_1990_2020)
 
 ## change the legend names and colors
 SL_1990_2020$tb_legend$color <- c("blue", "green", "red", "yellow", "brown")
-SL_1990_2020$tb_legend$categoryName <- factor(c("Water", "Vegetation", "Builtup", "Crop", "Barren"),
+SL_1990_2020$tb_legend$categoryName <- factor(c("Water", "Vegetation", "Builtup", "Agriculture", "Barren"),
                                               levels = c("Water", "Vegetation", "Builtup", "Agriculture", "Barren"))
 
 
 ## Intensity Analysis - 
+
+## Intensity of changes between builtup and agriculture
 testSL <- intensityAnalysis(dataset = SL_1990_2020,
-                            category_n = "Builtup", category_m = "Crop")
+                            category_n = "Builtup", category_m = "Agriculture")
 
 
 
@@ -80,4 +82,5 @@ sankeyLand(dataset = SL_1990_2020$lulc_Multistep,
 ## Sankey diagram for the years 1990-2020
 sankeyLand(dataset = SL_1990_2020$lulc_Onestep,
            legendtable = SL_1990_2020$tb_legend)
+
 

@@ -335,9 +335,35 @@ dist_lu_v4 %>% filter(landuse %in% c('Builtup') & district == "Meerut") %>% grou
   facet_wrap(~district, ncol = 3)
 
 
+## Five Yearly Changes in Land Use with respect to districts -  Replace the land use for each graph
+dist_lu_v4 %>% filter(landuse %in% c('Barren')) %>% group_by(year, landuse, district) %>% 
+  ggplot(aes(x = reorder(district, area), y = area, group = year, color = year)) + geom_line(size = 1) + 
+  facet_wrap(~landuse, ncol = 1, scales = "free_y") +
+  scale_color_viridis(discrete = T) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle=90, size = 15, hjust = 1, family = "Times New Roman", face = "bold"),
+        axis.text.y = element_text(size = 17),
+        axis.title = element_text(size = 22, face = "bold" ),
+        plot.title = element_text(size=24, face = "bold"),
+        panel.grid = element_line(color = '#D1D1D1')
+        )
 
 
 
+## Five Yearly Changes in Land Use with respect to states and districts -  Replace the land use for each graph
+dist_lu_v4 %>% filter(state %in% c("Delhi")) %>%  group_by(year, district) %>% 
+  ggplot(aes(x = year, y = area, group = landuse, color = landuse)) + geom_line(size = 1) + 
+  facet_wrap(~district, ncol = 3) +
+  scale_color_manual(values=c("yellow", "#BF9000", "red","#00B050", "#56B4E9")) +
+  theme_linedraw() +
+  theme(panel.spacing.x = unit(1, "lines"),
+        strip.text.x = element_text(size = 17),
+        axis.text.x = element_text(angle=90, size = 12, hjust = 1),
+        axis.text.y = element_text(size = 14),
+        axis.title = element_text(size = 14, face = "bold" ),
+        panel.grid = element_line(color = '#ADADAD'),
+        legend.position = 'bottom') 
 
 
-  
+ggsave("yearly_change_delhi_v4.png", height = 10, width = 15, dpi= 300)
+
