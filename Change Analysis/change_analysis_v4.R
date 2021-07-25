@@ -4,7 +4,6 @@
 ## install.packages("OpenLand")
 library(OpenLand)
 library(raster)
-library(kableExtra)
 library(tidyverse)
 
 list.files("D:/OneDrive - UTS/PhD_UTS/Stage 3/Analysis/Prediction/ForTerrset60_v4", pattern = ".tif")
@@ -50,6 +49,14 @@ SL_1990_2020$tb_legend$categoryName <- factor(c("Water", "Vegetation", "Builtup"
 testSL <- intensityAnalysis(dataset = SL_1990_2020,
                             category_n = "Builtup", category_m = "Agriculture")
 
+
+## Intensity of changes between agriculture and built
+testSL_agri_built <- intensityAnalysis(dataset = SL_1990_2020,
+                                       category_n = "Agriculture", category_m = "Builtup")
+
+names(testSL_agri_built)
+
+
 all_transition_v4 <- testSL$lulc_table
 
 write.csv(all_transition_v4, file = "all_transitions_v4.csv", row.names = F)
@@ -84,6 +91,12 @@ plot(testSL$transition_lvlGain_n,
      marginplot = c(.3, .3), labs = c("Categories", "Uniform Rate"), 
      leg_curv = c(x = 5/10, y = 5/10))
 
+plot(testSL$transition_lvlLoss_m,
+     labels = c(leftlabel = bquote("Loss of Agriculture (" ~ km^2 ~ ")"),
+                rightlabel = "Intensity Loss of Agriculture (%)"),
+     marginplot = c(.3, .3), labs = c("Categories", "Uniform Rate"), 
+     leg_curv = c(x = 5/10, y = 5/10))
+
 
 
 netgrossplot(dataset = SL_1990_2020$lulc_Multistep,
@@ -106,11 +119,19 @@ sankeyLand(dataset = SL_1990_2020$lulc_Multistep,
            legendtable = SL_1990_2020$tb_legend)
 
 
+
 ## Sankey diagram for the years 1990-2020
 sankeyLand(dataset = SL_1990_2020$lulc_Onestep,
            legendtable = SL_1990_2020$tb_legend)
 
-as.data.frame(testSL$interval_lvl) %>% kbl()
+##
+barplotLand(dataset = SL_1990_2020$lulc_Multistep, 
+            legendtable = SL_1990_2020$tb_legend,
+            xlab = "Year",
+            ylab = bquote("Area (" ~ km^2~ ")"),
+            area_km2 = TRUE)
+
+
 
 
 
@@ -137,12 +158,14 @@ combined2$interval <- factor(combined2$interval,
 
 
 ## Annual Gain and Loss Rate
-combined2 %>% pivot_longer(c(4,7), names_to = "gain_loss_rate", values_to = "rate") %>% 
+combined2 %>% 
+   pivot_longer(c(4,7), names_to = "gain_loss_rate", values_to = "rate") %>% 
    pivot_longer(c(3,5), names_to = "gain_loss_km", values_to = "area") %>% 
+   
    ggplot(aes(x= category, y= rate, fill = gain_loss_rate)) + geom_bar(stat = 'identity', position = position_dodge(0.8)) +
    geom_text(aes(0,uniform_rate,label = paste("Uniform Rate = ", round(uniform_rate,2)), hjust = -0.4, vjust= -0.5), size = 5) +
    scale_fill_manual(name = "", labels = c("Gain Rate", "Loss Rate"), values=c("#00afb9", "#f07167")) +
-   geom_hline(aes(yintercept = uniform_rate, color = uniform_rate), linetype="dashed", color = "black", size = 1) + 
+   geom_hline(aes(yintercept = uniform_rate, color = uniform_rate), linetype="dashed", color = "black", size = 1) +
    xlab('Category') + ylab('Annual Change Intensity (%)') + ggtitle("Annual Gain and Loss Intensity of Categories") +
    facet_wrap(~interval, ncol = 3) + theme_linedraw() +
    theme(panel.spacing.x = unit(1, "lines"),
@@ -231,8 +254,8 @@ ggsave("transition_to_built_v4.png", height = 7, width = 12, dpi= 300)
 
 names(testSL)
 
-## Transition loss of Agriculture
 
+## Transition loss of Agriculture
 transition_loss_agri <- testSL$transition_lvlLoss_m@transitionData
 
 transition_loss_agri <- transition_loss_agri %>% rename("area_km" = "T_m2j_km2",
@@ -253,7 +276,7 @@ transition_loss_agri %>%
    geom_hline(aes(yintercept = uniform_rate, color = uniform_rate), linetype="dashed", color = "black", size = 1) +
    scale_fill_manual(name = "", values=c("#00bbf9", "#38b000", "red", "#f8961e")) +
    xlab('') + ylab("Annual Rate of Transition (%)") + ggtitle("Intensity of Loss of Agriculture") +
-   facet_wrap(~interval, ncol = 3) + theme_linedraw() +
+   facet_wrap(~interval, ncol = 1) + theme_linedraw() +
    theme(panel.spacing.x = unit(1, "lines"),
          panel.spacing.y = unit(1, "lines"),
          strip.text.x = element_text(size = 17, face = 'bold'),
