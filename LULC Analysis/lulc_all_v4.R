@@ -3,7 +3,7 @@ library(ggplot2)
 library(data.table)
 library(readr)
 library(tidyr)
-library(plyr)
+## library(plyr)
 library(viridis)
 library(hrbrthemes)
 library(kableExtra)
@@ -316,16 +316,32 @@ dist_lu_v4 %>% filter(landuse %in% c('Builtup')) %>% group_by(year, district) %>
         legend.position = "none")
 
 
-dist_lu_v3 %>% group_by(year, district) %>% 
+dist_lu_v4 %>% group_by(year, district) %>% 
   dplyr::summarise(sum = sum(area)) %>% 
   ggplot(aes(x= district, y = sum, fill = district, group = 1)) + geom_col() + 
   coord_flip() +  facet_wrap(~year, ncol = 4)
 
 
+yl <- expression(Area ~ (km^2))
+
 ## Total change in landuse from 1990-2000. Change the landuse value to see the result for each value.
-dist_lu_v4 %>% filter(landuse %in% c('Builtup')) %>% ggplot(aes(year, area, group = district, text= district)) + 
-  geom_area(aes(fill = district)) + scale_fill_viridis(discrete = T) + facet_wrap(facets = ~reorder(district, -area), scale = 'free_y') + theme_ipsum() +
-  theme(legend.position = 'none')
+dist_lu_v4 %>% filter(landuse %in% c('Agriculture')) %>% ggplot(aes(year, area, group = district, text= district)) + 
+  geom_area(aes(fill = district), alpha = 0.8) + 
+  geom_smooth(method = 'lm', se = FALSE, linetype = "dashed", color = "red", lwd = 1.3) +
+  scale_fill_viridis(discrete = T) + ylab(yl) + xlab('Year') +
+  facet_wrap(facets = ~reorder(district, -area), scale = 'free_y', ncol = 3) + 
+  theme_linedraw() +
+  theme(panel.spacing.x = unit(1, "lines"),
+        strip.text.x = element_text(size = 12, face = "bold"),
+        axis.text.x = element_text(angle=45, size = 13, hjust = 1),
+        axis.text.y = element_text(size = 13),
+        axis.title = element_text(size = 16, face = "bold" ),
+        panel.grid = element_line(color = '#ADADAD'),
+        legend.position = 'none')  
+
+## Saves the last plot
+ggsave("all_districts_built.png", height = 13, width = 8,  units = c('in'), dpi= 250)
+
 
 
 ## Percent change in land use from 1990-2020. Change the landuse value to see result for each value
@@ -336,12 +352,12 @@ dist_lu_v4 %>% filter(landuse %in% c('Builtup') & district == "Meerut") %>% grou
 
 
 ## Five Yearly Changes in Land Use with respect to districts -  Replace the land use for each graph
-dist_lu_v4 %>% filter(landuse %in% c('Barren')) %>% group_by(year, landuse, district) %>% 
+dist_lu_v4 %>% filter(landuse %in% c('Builtup')) %>% group_by(year, landuse, district) %>% 
   ggplot(aes(x = reorder(district, area), y = area, group = year, color = year)) + geom_line(size = 1) + 
   facet_wrap(~landuse, ncol = 1, scales = "free_y") +
   scale_color_viridis(discrete = T) +
-  theme_bw() +
-  theme(axis.text.x = element_text(angle=90, size = 15, hjust = 1, family = "Times New Roman", face = "bold"),
+  theme_linedraw() +
+  theme(axis.text.x = element_text(angle=45, size = 15, hjust = 1, vjust = 1, face = "bold"),
         axis.text.y = element_text(size = 17),
         axis.title = element_text(size = 22, face = "bold" ),
         plot.title = element_text(size=24, face = "bold"),
@@ -362,6 +378,7 @@ dist_lu_v4 %>% filter(state %in% c("Delhi")) %>%  group_by(year, district) %>%
         axis.text.y = element_text(size = 14),
         axis.title = element_text(size = 14, face = "bold" ),
         panel.grid = element_line(color = '#ADADAD'),
+        legend.text = element_text(size = 15),
         legend.position = 'bottom') 
 
 

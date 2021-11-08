@@ -8,7 +8,7 @@ library(patchwork)
 library(cowplot)
 library(ggthemes)
 library(ggridges)
-
+library(Cairo)
 
 
 getwd()
@@ -57,7 +57,7 @@ write_csv(space_time_v4,
 
 
 ## Percent Areas of Land Use Over the Distance (Zones)
-space_time_v4 %>% dplyr::mutate(percent = (lc_area/zone_area)*100) %>% 
+newpic <- space_time_v4 %>% dplyr::mutate(percent = (lc_area/zone_area)*100) %>% 
   filter(!landuse %in% c("Water")) %>% 
   
   ggplot(aes(x=dist, y=percent, group = year, color = year)) + geom_line(size = 1, alpha = 0.8) +
@@ -78,13 +78,38 @@ space_time_v4 %>% dplyr::mutate(percent = (lc_area/zone_area)*100) %>%
         legend.title = element_text(size = 17, face = "bold"),
         legend.position = 'right')
 
-ggsave("lc_dist_all_v4.png", height =10, width = 12, dpi= 300)
+ggsave("lc_dist_all_v4.png", height =10, width = 12, dpi= 250)
+dev.off()
 
 
 
+tmp <- space_time_v4 %>% mutate(landuse2 = landuse) %>% mutate(percent = (lc_area/zone_area)*100) 
+  
+  
+ tmp %>%
+  ggplot(aes(x = dist, y= percent)) + 
+   geom_line(data = tmp %>% filter(landuse %in% c("Builtup", "Agriculture") & year %in% c("1990")),  
+             aes(group = landuse, color = landuse), size = 1, alpha = 0.9, lty = 2) +
+   geom_line(data = tmp %>% filter(landuse %in% c("Builtup", "Agriculture") & year %in% c("2020")),  
+             aes(group = landuse, color = landuse), size = 1.2, alpha = 0.8) +
+  
+  
+  ##ggtitle("Percent Variation of Builtup Over Distance") +
+  ylab('(%)\n') + xlab('Distance from CBD (km)') + guides(color = guide_legend(title = "Land Use")) +
+  #facet_wrap(~landuse, ncol = 2) +
+  theme_linedraw() +
+  theme(panel.spacing.x = unit(1, "lines"),
+        panel.spacing.y = unit(1, "lines"),
+        strip.text.x = element_text(size = 17, face = 'bold'),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(size=18, face = "bold"),
+        axis.text.y = element_text(size = 15),
+        axis.text.x = element_text(angle=45, size = 15, hjust = 1),
+        panel.grid = element_line(color = '#343a40'),
+        plot.title = element_text(size=22, face = "bold"),
+        legend.text = element_text(size = 16),
+        legend.title = element_text(size = 17, face = "bold"),
+        legend.position = 'none')
 
-
-
-
-
+ ggsave("cross_over_v4.png", height =6, width =8, dpi= 250)
 
