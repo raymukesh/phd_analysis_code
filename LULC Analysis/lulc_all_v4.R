@@ -94,11 +94,11 @@ state_area <- dist_lu_v4 %>% select(year, state, district, landuse, area) %>%
   filter(year == 2020) %>% group_by(state, landuse) %>% 
   dplyr::summarise(sum = sum(area)) %>% 
   ggplot(aes(x=landuse, y=sum, group = landuse, fill = landuse)) + geom_bar(stat = 'identity', color="black") + 
-  scale_fill_manual(values=c("yellow", "#BF9000", "red","#00B050", "#56B4E9")) + 
+  scale_fill_manual(values = c("#fecc5c", "#fc8d59","red", "#31a354", "#2b8cbe")) +  + 
   ylab("Area"~(km^2)) + xlab('') + labs(title = "A") +
   geom_text(aes(label = sum), size = 6, hjust = -0.1) + ylim(c(-0, 7200)) + 
   coord_flip() +
-  facet_wrap(~state, ncol=3) + theme_linedraw() +
+  facet_wrap(~state, ncol=3) + theme_fivethirtyeight() +
     theme(panel.spacing.x = unit(1, "lines"),
           strip.text.x = element_text(size = 22),
           axis.text.x = element_text(angle=45, size = 17, hjust = 1),
@@ -124,10 +124,10 @@ state_prop <- dist_lu_v4 %>% select(year, state, district, area_km, landuse, are
   mutate(prop = round((area_cat/statearea)*100, 2)) %>%
   
   ggplot(aes(x=landuse, y=prop, fill=landuse)) + geom_bar(stat = 'identity', color = 'black') + 
-  scale_fill_manual(values=c("yellow", "#BF9000", "red","#00B050", "#56B4E9")) + 
+  scale_fill_manual(values = c("#fecc5c", "#fc8d59","red", "#31a354", "#2b8cbe")) + 
   ylim(0,100) + ylab("(%)") + xlab('') + labs(title = "B") +
   facet_wrap(~state, ncol = 3) + geom_text(aes(label = prop), size = 6, hjust = -0.1) + 
-  coord_flip() + theme_linedraw() +
+  coord_flip() + theme_fivethirtyeight() +
   theme(panel.spacing.x = unit(1, "lines"),
         strip.text.x = element_text(size = 22),
         axis.text.x = element_text(angle=45, size = 17, hjust = 1),

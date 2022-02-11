@@ -19,9 +19,9 @@ show_in_excel <- function(.data) {
 
 ## Update 3 - The Rainfall and ET Data is upto date - ET data changed to version 2
 
-## Read the data NDVI and Evatranspiration (ET)
+## Read the data NDVI and Evapotranspiration (ET)
 ndvi <- read_xlsx("data/NDVI_20_years.xlsx")
-ET2 <- read_xlsx("data/ET_20_years_v3.xlsx")
+ET2 <- read_xlsx("data/ET_20_years_v2.xlsx") ## Use version 2 for mean of months and version 3 for sum of months
 rain <- read_xlsx("data/chirps_rainfall_20_21.xlsx")
 
 # Convert date column into date
@@ -40,7 +40,7 @@ ndvi_2 <- ndvi %>% group_by(month) %>% summarise(NDVI_val = mean(NDVI))
 ndvi_2$NDVI_val <- round(ndvi_2$NDVI_val, 2)
 
 
-ET2_2 <- ET2 %>% group_by(month) %>% summarise(ET_val = sum(ET_val))
+ET2_2 <- ET2 %>% group_by(month) %>% summarise(ET_val = mean(ET_val))
 ET2_2$ET_val <- round(ET2_2$ET_val, 2)
 
 ##  Create the monthly sum of rainfall in that particular year
@@ -67,12 +67,12 @@ combined2 %>% filter(!year %in% c("2000")) %>% group_by(month_name) %>% summaris
 ## Plot Annual Monthly Variability Between Evapotranspiration, NDVI and Precipitation
 combined2 %>% filter(!year %in% c("2000")) %>% 
   group_by(year, month_name) %>% 
-  summarise(ET_mean = mean(ET_val), NDVI_mean = mean(NDVI_val), rain_mean = (mean(rain_val))) %>%
+  summarise(ET_mean = mean(ET_val), NDVI_mean = mean(NDVI_val), rain_mean = (mean(rain_val))/10) %>%
   
   ggplot(aes(x=month_name)) + 
   geom_bar(aes(y = ET_mean), stat = "identity", fill = "#4eb3d3", alpha = 0.6) +
-  geom_line(aes(y = NDVI_mean*500, group = 1), color = "red", size = 1) + geom_point(aes(y = NDVI_mean*500), color = "red", size =3) +
-  scale_y_continuous(sec.axis = sec_axis(~./500, name = "NDVI", breaks = derive())) + ## Adds secondary axis on the right
+  geom_line(aes(y = NDVI_mean*150, group = 1), color = "red", size = 1) + geom_point(aes(y = NDVI_mean*150), color = "red", size =3) +
+  scale_y_continuous(sec.axis = sec_axis(~./150, name = "NDVI", breaks = derive())) + ## Adds secondary axis on the right
   geom_line(aes(y = rain_mean, group = 1), color = "#08589e", size = 1) + geom_point(aes(y = rain_mean), color = "#08589e", size = 3) + 
   labs(x = "Month", y = "Evapotranspiration (mm) and Precipitation (mm)") + 
   ggtitle(label = "Monthly Variation of NDVI, Evapotranspiration and Precipitaiton (2001-2020)") +
@@ -132,6 +132,7 @@ rain_3 <- rain %>% mutate(month_num = month(rain$Date)) %>%
 combined2 %>% filter(!year %in% c("2000")) %>% #group_by(year, month_name) %>% summarise(rai_sum = sum(rain_val)) %>% 
   group_by(month_name) %>% summarise(Ymean = mean(rain_val)) %>% 
   ggplot(aes(x=month_name, y = Ymean)) + geom_bar(stat = 'identity', fill = "#3182bd") +
+  geom_text(aes(label = round(Ymean)), vjust = -0.5, colour = "black", size = 4.5) + ylim(c(0,230)) +
   xlab("Month") + ylab("Rainfall (mm)") +
   ggtitle(label = "Long Term Monthly Mean Precipitation (2001-2020)") +
   theme_fivethirtyeight() +
@@ -145,6 +146,29 @@ combined2 %>% filter(!year %in% c("2000")) %>% #group_by(year, month_name) %>% s
         legend.position = 'none')
 
 ggsave("output/rainfall_LT_month_mean.png", height=4, width=10, dpi=300)
+
+year_lable <- seq(2001, 2020, 1)
+
+## Total Rainfall by Year (2001-2020)
+rain_3 %>% filter(!year %in% c("2000")) %>% group_by(year) %>% summarise(year_sum = sum(rain_mm)) %>%
+  ggplot(aes(x=year, y=year_sum)) + geom_bar(stat = 'identity', fill = "#3182bd") +
+  geom_text(aes(label = round(year_sum)), vjust = 1.5, colour = "white", size = 5) +
+  xlab("Year") + ylab("Precipitation (mm)") +
+  ggtitle(label = "Total Yearly Precipitation (2001-2020)") +
+  scale_x_continuous(labels = year_lable, breaks = year_lable) +
+  theme_fivethirtyeight() +
+  theme(axis.title.y = element_text(margin = margin(r = 10), size=18, face = "bold"),
+        axis.title.x = element_text(margin = margin(t = 10), size=18, face = "bold"),
+        axis.text.y = element_text(size = 13, color = "black", face = 'bold'),
+        axis.text.x = element_text(angle = 90, size = 14, color = 'black', face = 'bold', hjust = 0.5, vjust = 0.5),
+        plot.title = element_text(size = 20, face = "bold"),
+        legend.text = element_text(size = 12, face = "bold"),
+        legend.title = element_text(size = 13, face = "bold"),
+        legend.position = 'bottom')
+
+ggsave("output/rainfall_yearly.png", height=6, width=13, dpi=300)
+
+
 
 
 ## Time Series of Rainfall (2001-2020)

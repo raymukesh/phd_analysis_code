@@ -31,6 +31,8 @@ names(rain_month) <- month.name
 ## clip the files to the site of Delhi NCR
 ## Load the shapefile
 delhi <- st_read("site/Total_area_43N_1.shp")
+district <- readOGR(dsn = "all_districts/.", layer = "all_districts_site_43N",  stringsAsFactors = F)
+district <- fortify(district)
 
 ## Reproject raster data of the stack
 rain_month <- projectRaster(rain_month, crs = crs(delhi))
@@ -52,10 +54,12 @@ col_df_na <- col_df[complete.cases(col_df),]
 
 ## Plot the data
 ggplot() + geom_raster(data=col_df_na, aes(x=x/1e4, y=y/1e5, fill = value)) +
+  geom_polygon(data = district, aes(x = long/1e4, y = lat/1e5, group = group), lwd = 0.7, colour = "black", fill = NA) +
+  coord_fixed(ratio = 10) +
   facet_wrap(~variable, ncol = 4) +
   labs(x = "Longitude", y = "Latitude", caption = "Based on CHIRPS Dataset  |  Maps by Author") + 
   ggtitle("Mean Monthly Rainfall (2001 - 2020)") +
-  scale_fill_gradientn(name = "Rainfall (mm)", colours = brewer.pal(9, 'RdYlBu'), breaks = seq(0, 500, 50)) +
+  scale_fill_gradientn(name = "Rainfall\n(mm)", colours = brewer.pal(9, 'RdYlBu'), breaks = seq(0, 500, 50)) +
   theme_fivethirtyeight() +
   theme(panel.spacing.x = unit(1, "lines"),
         strip.text.x = element_text(size = 30,  face = 'bold'),
@@ -66,11 +70,11 @@ ggplot() + geom_raster(data=col_df_na, aes(x=x/1e4, y=y/1e5, fill = value)) +
         axis.title.y = element_text(margin = margin(r = 20), size = 30, face = 'bold'),
         plot.title = element_text(size = 40, face = 'bold', color = "black"),
         legend.key.size = unit(0.8, 'in'), 
-        legend.title = element_text(size = 25, face = "bold"),
-        legend.text = element_text(size = 23, angle = 0),
+        legend.title = element_text(size = 30, face = "bold"),
+        legend.text = element_text(size = 25, angle = 0, vjust = 0.5),
         legend.direction = "vertical",
         legend.position = "right",
         plot.caption = element_text(size = 26))
 
-ggsave("output/rainfal_mean_month_20.png", height = 18, width = 30, units = 'in', dpi= 200)
+ggsave("output/rainfal_mean_month_v2.png", height = 18, width = 30, units = 'in', dpi= 200)
 
