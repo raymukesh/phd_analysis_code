@@ -1,0 +1,9 @@
+MODIS Terra Daily NDVI
+
+Data Code: MODIS/MOD09GA_006_NDVI
+
+GEE Data Link - https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GA_006_NDVI?hl=en
+
+Resolution: 500
+
+Dataset Year: 2001 - 2020

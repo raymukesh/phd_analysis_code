@@ -1,0 +1,9 @@
+MOD16A2.006: Terra Net Evapotranspiration 8-Day Global 500m 
+
+Data Link: https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD16A2?hl=en
+
+Resolution: 500m
+
+Scale Factor: 0.1
+
+Data Years: 2001 - 2020

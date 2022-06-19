@@ -11,16 +11,23 @@ year2005 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Analysis/Prediction/ForTer
 year2010 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Analysis/Prediction/ForTerrset60_v4/final_2010_v4.tif")
 year2015 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Analysis/Prediction/ForTerrset60_v4/final_2015_v4.tif")
 year2020 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Analysis/Prediction/ForTerrset60_v4/final_2020_v4.tif")
+year2025 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Final LULC Images/final_2025_v7.tif")
+year2030 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Final LULC Images/final_2030_v7.tif")
+year2035 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Final LULC Images/final_2035_v7.tif")
+year2040 <- raster("D:/OneDrive - UTS/PhD_UTS/Stage 3/Final LULC Images/final_2040_v7.tif")
 
+plot(year2040)
 
-landcover <- data.frame(year2015=values(year2015), year2020=values(year2020))
+dev.off()
+
+landcover <- data.frame(year2020=values(year2020), year2025=values(year2025))
 
 landcover_change <- table(landcover)
 
 landcover_change_matrix <- (round(addmargins(landcover_change)*3600/1000000, digits = 1))
 
 
-write.table(landcover_change_matrix, file = "matrix_2015_2020.csv", append = T, sep = ",", col.names = NA, 
+write.table(landcover_change_matrix, file = "Raw Data/matrix_2020_2025.csv", append = T, sep = ",", col.names = NA, 
             row.names = T, quote = F)
 
 
@@ -45,10 +52,13 @@ FinalTable <- cbind(c(landcoverYear1990),
                     c(Year1990percentage),c(Year1995percentage),
                     c(percentageDifference))
 
-colnames(FinalTable) <- c("Year 1990","Year 1995","Difference","Year 1990 % of Total",
-                          "Year 1995 % of Total","% Difference")
+colnames(FinalTable) <- c("Year 2020","Year 2025","Difference","Year 2020 % of Total",
+                          "Year 2025 % of Total","% Difference")
 
-write.table(FinalTable ,file="percentage_landcover_1990_1995.csv")
+
+Table_2020_2025 <- as.data.frame(FinalTable)
+
+write.csv(Table_2020_2025, file="percentage_landcover_2020_2025.csv")
 
 
 

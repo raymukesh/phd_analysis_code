@@ -21,6 +21,8 @@ col_stack <- stack(col)
 ## Create a monthly mean of the stack
 rain_month <- stackApply(col_stack, 1:12, mean)
 
+subset(rain_month, 2) ## Use this to extract a particular layer from RasterStack
+
 ## plot the stack
 plot(rain_month)
 
@@ -77,4 +79,18 @@ ggplot() + geom_raster(data=col_df_na, aes(x=x/1e4, y=y/1e5, fill = value)) +
         plot.caption = element_text(size = 26))
 
 ggsave("output/rainfal_mean_month_v2.png", height = 18, width = 30, units = 'in', dpi= 200)
+
+
+## DISTRICTWISE DISTRIBUTION OF RAINFALL
+## Import districts as polygons
+all_districts <- st_read("all_districts/all_districts_site_43N.shp")
+st_crs(rain_month) == st_crs(all_districts)
+
+## Mean night temp overs districts
+all_districts_mean <- raster::extract(rain_month, all_districts, fun = mean, df = TRUE) 
+all_districts_mean <- all_districts %>% st_set_geometry(., NULL) %>% mutate(ID = 1:18) %>% left_join(all_districts_mean, by = "ID") %>% as_tibble()
+write.csv(all_districts_mean, file = "mean_rain_dist.csv")
+
+
+
 

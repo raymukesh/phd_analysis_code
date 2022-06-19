@@ -1,0 +1,9 @@
+MOD13Q1.006 Terra Vegetation Indices 16-Day Global 250m
+
+Data Link: https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1
+
+Resolution: 250m
+
+Scale Factor: 0.0001
+
+Data Years: 2001 - 2020

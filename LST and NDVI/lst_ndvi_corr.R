@@ -17,12 +17,14 @@ ggplot(data = data, aes(x= LST, y=NDVI)) +
 
 ggsave("ndv_lst_profile.png", height = 10, width = 10, dpi = 300)
 
+
+## Correlation Plot
 ggscatter(data, x = "LST", y = "NDVI", add = "reg.line",
           color = "red",  size = 4, alpha = 0.5,
           conf.int = TRUE, col="black", cor.coef = TRUE,
           cor.coeff.args = list(method = "pearson", label.x = 40, label.sep = "\n"),
           add.params = list(color = "blue", fill = "lightgray"),
-          cor.method = "pearson", xlab = "LST (°C) ", ylab = "NDVI") + 
+          cor.method = "pearson", xlab = "LST (?C) ", ylab = "NDVI") + 
   theme_clean() +
   theme(axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),

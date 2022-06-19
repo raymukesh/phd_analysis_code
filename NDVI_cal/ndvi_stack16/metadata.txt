@@ -1,0 +1,9 @@
+MODIS Combined 16-Day NDVI
+
+Data Code: MODIS/MCD43A4_006_NDVI
+
+GEE Data Link - https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_006_NDVI?hl=en
+
+Resolution: 500
+
+Dataset Year: 2001 - 2020

@@ -325,7 +325,8 @@ dist_lu_v4 %>% group_by(year, district) %>%
 yl <- expression(Area ~ (km^2))
 
 ## Total change in landuse from 1990-2000. Change the landuse value to see the result for each value.
-dist_lu_v4 %>% filter(landuse %in% c('Agriculture')) %>% ggplot(aes(year, area, group = district, text= district)) + 
+dist_lu_v4 %>% filter(landuse %in% c('Builtup') & district %in% c("Gurgaon")) %>%
+  ggplot(aes(year, area, group = district, text= district)) + 
   geom_area(aes(fill = district), alpha = 0.8) + 
   geom_smooth(method = 'lm', se = FALSE, linetype = "dashed", color = "red", lwd = 1.3) +
   scale_fill_viridis(discrete = T) + ylab(yl) + xlab('Year') +
@@ -383,4 +384,15 @@ dist_lu_v4 %>% filter(state %in% c("Delhi")) %>%  group_by(year, district) %>%
 
 
 ggsave("yearly_change_delhi_v4.png", height = 10, width = 15, dpi= 300)
+
+
+
+dist_lu_v4 %>% filter(landuse %in% c('Builtup')) %>%
+  ggplot(aes(year, area, group = district, fill = district)) + 
+  geom_line() + geom_point(aes(x=year, y=area), color = "black", size = 1.5) +
+  facet_wrap(~district, ncol = 6) +
+  theme_bw()
+  
+
+
 
