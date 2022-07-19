@@ -1,3 +1,9 @@
+##################################################################
+##      THIS CODE CALCULATES THE MEAN NDVI OF THE SITE     ######
+##      AND MEAN MONTHLY VARIATION IN NDVI FROM 2001-2020  ######
+#################################################################
+
+
 library(reshape2)
 library(sf)
 library(raster)
@@ -23,7 +29,7 @@ col_ndvi <- mixedsort(col_ndvi) ## From gtools package this arranges the files i
 
 length(col_ndvi)
 
-## Stack the collection
+## Stack the collection and multiply by the scale factor of 0.0001
 col_stack <- stack(col_ndvi)
 col_stack2 <- col_stack*0.0001
 
@@ -96,7 +102,7 @@ ggsave("output/ndvi_mean_month_16_terra.png", height = 18, width = 30, units = '
 all_districts <- st_read("all_districts/all_districts_site_43N.shp")
 st_crs(mean_ndvi) == st_crs(all_districts)
 
-## Mean night temp overs districts
+## Mean NDVI of all the districts
 all_districts_mean <- raster::extract(mean_ndvi, all_districts, fun = mean, df = TRUE) 
 all_districts_mean <- all_districts %>% st_set_geometry(., NULL) %>% mutate(ID = 1:18) %>% left_join(all_districts_mean, by = "ID") %>% as_tibble()
 write.csv(all_districts_mean, file = "mean_ndvi_district_16_terra.csv")
@@ -175,10 +181,14 @@ ndvi_y_mask <- mask(ndvi_y_crop, site)
 ### plot the raster stack with GGPLOT
 ## converting the images to dataframe - ggplot need x and y values
 yearly_df_ndvi <- as.data.frame(ndvi_y_mask, xy = TRUE) %>% melt(id.vars = c('x', 'y'))
+
+## Remove the NA values with complete.cases function, this will only plot the areas inside the site
 yearly_df_ndvi <- yearly_df_ndvi[complete.cases(yearly_df_ndvi),]
 
+# Calcualte the mean value and covert as tibble
 df <- yearly_df_ndvi %>% group_by(variable) %>% summarise(mean = mean(value)) %>% as_tibble()
 
+# export the table as csv
 write.csv(df, "mean_yearly_values.csv")
 
 ## Plot the data
@@ -208,7 +218,7 @@ ggplot() + geom_raster(data=yearly_df_ndvi, aes(x=x/1e4, y=y/1e5, fill = value))
 ggsave("output/ndvi_mean_yearly_16_terra.png", height = 30, width = 20, units = 'in', dpi= 150)
 
 
-## Highest Change in NDVI
+## Highest Change in NDVI - Calculate the areas experiencing highest change in NDVI
 year_2001_ndvi <- subset(ndvi_y_mask, 1)
 year_2020_ndvi <- subset(ndvi_y_mask, 20)
 
